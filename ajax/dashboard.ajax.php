@@ -16,12 +16,32 @@ class AjaxDashboard{
         $ventasMesActual = DashboardControlador::ctrGetVentasMesActual();
         echo json_encode($ventasMesActual);
     }
+    public function getProductosMasVendidos(){
+        $productosMasVendidos = DashboardControlador::ctrProductosMasVendidos();
+
+        echo json_encode($productosMasVendidos);
+    }
+    public function getProductosPocoStock(){
+        $productosPocoStock = DashboardControlador::ctrProductosPocoStock();
+
+        echo json_encode($productosPocoStock);
+    }
 }
 
-if(isset($_POST['accion']) && $_POST['accion'] == 1){
+if(isset($_POST['accion']) && $_POST['accion'] == 1){ //Ejecutar funcion ventas del mes (Grafico de barras)
 
     $ventasMesActual = new AjaxDashboard();
     $ventasMesActual -> getVentasMesActual();
+
+}else if(isset($_POST['accion']) && $_POST['accion'] == 2){ //Ejecutar funcion de pxs mas vendidos
+
+    $productosMasVendidos = new AjaxDashboard();
+    $productosMasVendidos -> getProductosMasVendidos();
+
+}else if(isset($_POST['accion']) && $_POST['accion'] == 3){ //Ejecutar funcion de pxs poco stock
+
+    $productosPocoStock = new AjaxDashboard();
+    $productosPocoStock -> getProductosPocoStock();
 
 }else{
     $datos = new AjaxDashboard();

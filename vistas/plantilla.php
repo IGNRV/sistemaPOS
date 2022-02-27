@@ -18,7 +18,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="vistas/assets/dist/css/adminlte.min.css">
   <link rel="stylesheet" href="vistas/assets/dist/css/plantilla.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="vistas/assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- REQUIRED SCRIPTS -->
 
@@ -28,6 +32,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="vistas/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
 <script src="vistas/assets/plugins/chart.js/Chart.min.js"></script>
+<!-- SweetAlert2 -->
+<script src="vistas/assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+<!-- JS Bootstrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- AdminLTE App -->
 <script src="vistas/assets/dist/js/adminlte.min.js"></script>
 </head>
